@@ -1,7 +1,26 @@
+.login-nav {
+    display: flex;
+    font-family: sans-serif;
+    width: 100vw;
+    height: 50px;
+    align-items: center;
+    /* text-indent: 0%; */
+    /* margin-left: 10vw; */
+    background-color: rgb(22, 20, 20);
+}
+
+.nav-icon {
+    height: 30px;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 200px;
+}
+
 .form {
     display: flex;
-    width: 20vw;
-    height: 20vw;
+    width: 300px;
+    height: 350px;
     margin-top: 15vw;
     margin-left: 40vw;
     box-sizing: border-box;
@@ -10,7 +29,7 @@
     align-items: center;
     align-content: center;
     font-family: sans-serif;
-    background-color: white;
+    background-color: rgb(22, 20, 20);
     padding: 2rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 25px;
@@ -20,6 +39,21 @@ form {
     box-sizing: border-box;
     position: fixed;
 }
+
+@media screen and (max-width: 600px) {
+    .form {
+        justify-content: center;
+        align-items: center;
+        margin-left: 20%;
+        margin-top: 250px;
+    }
+    .icon {
+    content-visibility: hidden;
+    }
+    .signup-link {
+        width: 250px;
+    }
+    }
 
 .content-container {
     margin-top: 55px;
@@ -35,9 +69,11 @@ form {
 .login-title {
     display: flex;
     box-sizing: border-box;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     margin-bottom: 20px;
     margin-top: 0px;
+    justify-content: center;
+    align-self: center;
 }
 
 .input-container {
@@ -52,6 +88,8 @@ form {
     border: 1px solid #ffffff;
     border-radius: 5px;
     width: auto;
+    justify-content: center;
+    align-self: center;
 }
 
 .usernameInput:focus {
@@ -63,6 +101,8 @@ form {
     border: 1px solid #ffffff;
     width: auto;
     border-radius: 5px;
+    justify-content: center;
+    align-self: center;
 }
 
 .passwordInput:focus {
@@ -90,10 +130,11 @@ button[type="submit"]:hover {
     background: rgb(28, 121, 179);
 }
 
-.sign-up {
+.signup-link {
     align-content: center;
     justify-content: center;
     margin-top: 25px;
+    font-size: 15px;
 }
 
 a:link {
@@ -120,6 +161,7 @@ ul {
     justify-content: center;
     align-content: center;
     color: red;
+    overflow: hidden;
 }
 
 *{ margin: 0; padding: 0; box-sizing: border-box;}

@@ -28,11 +28,11 @@ function LoginFormPage() {
     return (
         <div className='bg'>
 
+            <h1 className="login-nav"><img className='nav-icon' alt="" src="https://cdn-icons-png.flaticon.com/512/931/931949.png" />brewr</h1>
+
             <div className='form'>
+
                 <img className='icon' alt="" src="https://cdn-icons-png.flaticon.com/512/931/931949.png" />
-                <ul>
-                    {errors.map((error, idx) => <li key={idx}>{error}</li>)}
-                </ul>
 
                 <form onSubmit={handleSubmit}>
 
@@ -41,6 +41,7 @@ function LoginFormPage() {
                         <h2 className='login-title'>Log in to Brewr</h2>
 
                         <div className='input-container'>
+
                             <input
                                 className='usernameInput'
                                 placeholder='Username or Email'
@@ -60,11 +61,15 @@ function LoginFormPage() {
                             />
                         </div>
 
+                        <ul>
+                            {errors.map((error, idx) => <li key={idx}>{error}</li>)}
+                        </ul>
+
                         <div className='loginBtn'>
-                            <button type="submit">Log In</button>
+                            <button type="submit">Log in</button>
                         </div>
 
-                        <p className='sign-up'>Not a Brewr member? <a href="signup">Sign up here.</a></p>
+                        <p className='signup-link'>Not a Brewr member? <a href="signup">Sign up here.</a></p>
 
                     </div>
                 </form>
