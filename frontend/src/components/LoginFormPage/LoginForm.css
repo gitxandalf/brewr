@@ -1,0 +1,125 @@
+.form {
+    display: flex;
+    width: 20vw;
+    height: 20vw;
+    margin-top: 15vw;
+    margin-left: 40vw;
+    box-sizing: border-box;
+    flex: auto;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    font-family: sans-serif;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 25px;
+}
+
+form {
+    box-sizing: border-box;
+    position: fixed;
+}
+
+.content-container {
+    margin-top: 55px;
+}
+
+.icon {
+    height: 35px;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.login-title {
+    display: flex;
+    box-sizing: border-box;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 10px;
+}
+
+.usernameInput {
+    height: 25px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    width: auto;
+}
+
+.usernameInput:focus {
+    border: 3px solid rgb(14, 114, 176);
+}
+
+.passwordInput {
+    height: 25px;
+    border: 1px solid #ffffff;
+    width: auto;
+    border-radius: 5px;
+}
+
+.passwordInput:focus {
+    border: 3px solid rgb(14, 114, 176);
+}
+
+.loginBtn {
+    display: flex;
+    justify-content: center;
+}
+
+button[type="submit"] {
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    background: rgb(14, 114, 176);
+    border: 1px solid rgb(14, 114, 176);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    width: 100px;
+}
+
+button[type="submit"]:hover {
+    background: rgb(28, 121, 179);
+}
+
+.sign-up {
+    align-content: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.bg {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    margin-left: 0px;
+    margin-top: 0px;
+    /* padding: 0%; */
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-image: url(https://images.alphacoders.com/823/823062.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: red;
+}
+
+*{ margin: 0; padding: 0; box-sizing: border-box;}
