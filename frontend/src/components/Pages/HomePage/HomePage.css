@@ -50,6 +50,10 @@ body {
     color: white;
 }
 
+#start-for-free:hover {
+color: darkgray;
+}
+
 .footer {
     display: flex;
     font-family: sans-serif;
@@ -65,7 +69,17 @@ body {
 
 .footer a {
     text-decoration: none;
-    color: rgb(29, 40, 194);
+}
+
+.github-link a {
+    color: inherit;
+   background-color: rgb(211, 211, 211, 0.25);
+   padding: 3px;
+   border-radius: 5px;
+}
+
+.github-link a:hover {
+    color: white;
 }
 
 
