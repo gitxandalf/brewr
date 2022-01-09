@@ -10,6 +10,8 @@
 
 #### B: Clone / Download this repo and...
 
-• npm install within the frontend and backend directories
-• npm start within the backend directory under localhost:5000
-• npm start within the frontend directory under localhost:3000
+•  npm install within the frontend and backend directories
+
+•  npm start within the backend directory under localhost:5000
+
+•  npm start within the frontend directory under localhost:3000
