@@ -1,0 +1,62 @@
+body {
+    padding: 0px;
+    z-index: 0;
+    animation: slideshow infinite linear 30s;
+}
+
+.slideshow-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 900px;
+}
+
+.center-paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: sans-serif;
+    color: white;
+    font-weight: 700;
+    align-items: center;
+}
+
+.center-title {
+    font-size: 50px;
+}
+
+.center-text {
+    display: flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    box-sizing: border-box;
+    width: 550px;
+    font-size: 23px;
+}
+
+#start-for-free {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    font-size:x-large;
+    width: 200px;
+    background-color: white;
+    padding: 20px;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+@keyframes slideshow {
+
+    0%   {background-image: url("https://www.expatica.com/app/uploads/sites/10/2021/02/british-beer-1920x1080.jpg");}
+    25%  {background-image: url("https://www.wallpapers4u.org/wp-content/uploads/girl_kuhol_beer_meadow_barley_77286_1920x1080.jpg");}
+    50%  {background-image: url("https://nik.bot.nu/o741849.jpg");}
+    75% {background-image: url("https://cdn.hipwallpaper.com/i/31/7/C1YklP.jpg");}
+    100% {background-image: url("https://images7.alphacoders.com/616/thumb-1920-616588.jpg");}
+
+}

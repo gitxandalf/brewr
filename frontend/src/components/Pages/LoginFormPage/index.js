@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import * as sessionActions from '../../store/session';
 import { useDispatch, useSelector } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import './LoginForm.css';
+import * as sessionActions from '../../../store/session';
+import Header from '../../Utils/Header';
 
 function LoginFormPage() {
     const dispatch = useDispatch();
@@ -28,7 +29,7 @@ function LoginFormPage() {
     return (
         <div className='bg'>
 
-            <h1 className="login-nav"><img className='nav-icon' alt="" src="https://cdn-icons-png.flaticon.com/512/931/931949.png" />brewr</h1>
+           <Header />
 
             <div className='form'>
 

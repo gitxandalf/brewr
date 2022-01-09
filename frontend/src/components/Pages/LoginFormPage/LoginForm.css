@@ -1,22 +1,3 @@
-.login-nav {
-    display: flex;
-    font-family: sans-serif;
-    width: 100vw;
-    height: 50px;
-    align-items: center;
-    /* text-indent: 0%; */
-    /* margin-left: 10vw; */
-    background-color: rgb(22, 20, 20);
-}
-
-.nav-icon {
-    height: 30px;
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    margin-left: 200px;
-}
-
 .form {
     display: flex;
     width: 300px;
