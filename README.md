@@ -1,6 +1,6 @@
 # brewr
 
-• is a Flickr.com clone made by Alexander Gangemi for the purpose of course work in App Academy and for use as an addition to his professional portfolio.
+• is a https://flickr.com/ clone made by Alexander Gangemi for the purpose of course work in App Academy and for use as an addition to his professional portfolio.
 
 ## In order to run this application...
 
