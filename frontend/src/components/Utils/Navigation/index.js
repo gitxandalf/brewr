@@ -29,7 +29,7 @@ function Navigation({ isLoaded }) {
 
                 <div className='nav-ul'>
                     <div className='left-nav'>
-                        <img className='home-nav-icon' alt="" src="https://cdn-icons-png.flaticon.com/512/931/931949.png" />
+                        <img className='home-nav-icon' alt="" src="https://res.cloudinary.com/xanderg/image/upload/v1641754293/931949_snanlf.png" />
                         <div className='nav-home'>
                             <NavLink exact to="/">brewr</NavLink>
                         </div>

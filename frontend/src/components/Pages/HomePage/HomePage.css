@@ -85,10 +85,10 @@ color: darkgray;
 
 @keyframes slideshow {
 
-    0%   {background-image: url("https://www.expatica.com/app/uploads/sites/10/2021/02/british-beer-1920x1080.jpg");}
-    25%  {background-image: url("https://www.wallpapers4u.org/wp-content/uploads/girl_kuhol_beer_meadow_barley_77286_1920x1080.jpg");}
-    50%  {background-image: url("https://nik.bot.nu/o741849.jpg");}
-    75% {background-image: url("https://cdn.hipwallpaper.com/i/31/7/C1YklP.jpg");}
-    100% {background-image: url("https://images7.alphacoders.com/616/thumb-1920-616588.jpg");}
+    0%   {background-image: url("https://res.cloudinary.com/xanderg/image/upload/v1641754108/british-beer-1920x1080_xn7qvj.jpg");}
+    25%  {background-image: url("https://res.cloudinary.com/xanderg/image/upload/v1641754128/girl_kuhol_beer_meadow_barley_77286_1920x1080_cu3kp3.jpg");}
+    50%  {background-image: url("https://res.cloudinary.com/xanderg/image/upload/v1641754146/o741849_zcafxa.jpg");}
+    75% {background-image: url("https://res.cloudinary.com/xanderg/image/upload/v1641754161/C1YklP_yjesdc.jpg");}
+    100% {background-image: url("https://res.cloudinary.com/xanderg/image/upload/v1641754176/thumb-1920-616588_om2ubv.jpg");}
 
 }

@@ -36,7 +36,7 @@ function SignupFormPage() {
 
             <div className="signup-form">
 
-                <img className='signup-icon' alt="" src="https://cdn-icons-png.flaticon.com/512/931/931949.png" />
+                <img className='signup-icon' alt="" src="https://res.cloudinary.com/xanderg/image/upload/v1641754293/931949_snanlf.png" />
 
                 <form className="signup-form2" onSubmit={handleSubmit}>
 
