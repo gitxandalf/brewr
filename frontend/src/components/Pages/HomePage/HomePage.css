@@ -15,8 +15,8 @@ body {
 
 .center-paragraph {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
     font-family: sans-serif;
     color: white;
     font-weight: 700;
@@ -25,15 +25,13 @@ body {
 
 .center-title {
     font-size: 50px;
+    font-weight: 550;
 }
 
-.center-text {
-    display: flex;
-    flex-direction:column;
-    flex-wrap:wrap;
-    box-sizing: border-box;
-    width: 550px;
+.center-text, .center-text-2 {
+    max-width: 640px;
     font-size: 23px;
+    font-weight: 600;
 }
 
 #start-for-free {
@@ -46,10 +44,30 @@ body {
     padding: 20px;
     text-decoration: none;
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 10px;
     font-weight: 700;
     margin-top: 50px;
+    color: white;
 }
+
+.footer {
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+    margin-top: 25px;
+    position:fixed;
+    height: 55px;
+    width: 100vw;
+    background-color: black;
+    align-items: center;
+    color: darkgray;
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgb(29, 40, 194);
+}
+
 
 @keyframes slideshow {
 
