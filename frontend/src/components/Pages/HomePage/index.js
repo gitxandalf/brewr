@@ -35,7 +35,7 @@ function HomePage() {
             </div>
 
             <footer className="footer">
-            <p className='github-link'><a href="https://github.com/gitxandalf">GitHub</a> and <a className="linkedin-link" href="https://www.linkedin.com/in/alexander-gangemi/">LinkedIn </a>for Alexander Gangemi</p>
+            <p className='github-link'><a href="https://github.com/gitxandalf">GitHub</a> and <a className="linkedin-link" href="https://www.linkedin.com/in/alexander-gangemi/">LinkedIn</a> for Alexander Gangemi</p>
             </footer>
         </div>
     )

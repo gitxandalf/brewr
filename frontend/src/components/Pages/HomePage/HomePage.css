@@ -21,6 +21,7 @@ body {
     color: white;
     font-weight: 700;
     align-items: center;
+    gap: 10px;
 }
 
 .center-title {
@@ -43,22 +44,24 @@ body {
     background-color: white;
     padding: 20px;
     text-decoration: none;
-    border: 1px solid white;
-    border-radius: 10px;
+    /* border: 1px solid white; */
+    border-radius: 2.5px;
     font-weight: 700;
     margin-top: 50px;
-    color: white;
+    color: black;
+
 }
 
 #start-for-free:hover {
 color: darkgray;
+transition: color .5s;
 }
 
 .footer {
     display: flex;
     font-family: sans-serif;
     justify-content: center;
-    margin-top: 25px;
+    margin-top: 10px;
     position:fixed;
     height: 55px;
     width: 100vw;

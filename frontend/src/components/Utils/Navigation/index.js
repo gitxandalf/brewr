@@ -35,18 +35,12 @@ function Navigation({ isLoaded }) {
                         </div>
                     </div>
 
-                    <div className="search-bar">
+                    {/* <div className="search-bar">
                         <button id="search-button">
                             <i className="fas fa-search"></i>
                         </button>
                         <SearchBar />
-
-                        {/* <input
-                    type="text"
-                    placeholder="Photos, people, or groups"
-                    required
-                /> */}
-                    </div>
+                    </div> */}
 
                     <div className='session-links'>
                         {isLoaded && sessionLinks}

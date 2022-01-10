@@ -29,15 +29,22 @@ form {
         margin-top: 250px;
     }
     .icon {
-    content-visibility: hidden;
+        content-visibility: hidden;
     }
     .signup-link {
         width: 250px;
     }
-    }
+}
 
 .content-container {
     margin-top: 55px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 10px;
 }
 
 .icon {
@@ -57,12 +64,6 @@ form {
     align-self: center;
 }
 
-.input-container {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin: 10px;
-}
 
 .usernameInput {
     height: 25px;
