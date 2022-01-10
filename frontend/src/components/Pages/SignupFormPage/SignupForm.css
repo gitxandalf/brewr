@@ -22,15 +22,15 @@
     margin-top: 12vw;
     margin-left: 40vw;
     box-sizing: border-box;
-    flex: auto;
     flex-direction: column;
     align-items: center;
     align-content: center;
     font-family: sans-serif;
-    background-color: rgb(22, 20, 20);
+    background-color: white;
     padding: 2rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 25px;
+    color: black;
 }
 
 @media screen and (max-width: 600px) {
@@ -46,33 +46,25 @@ content-visibility: hidden;
 }
 
 .signup-form2 {
-    box-sizing: border-box;
     position: fixed;
     align-items: center;
     justify-content: center;
-    margin: auto;
+}
+
+.signup-title {
+justify-content: center;
 }
 
 .signup-icon {
     height: 35px;
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
 }
 
 .signup-input-container {
+    display: flex;
+    flex-direction: column;
     margin-top: 55px;
     width: 258px;
     height: 350px ;
-    /* width: auto;
-    height: auto; */
-    overflow: hidden;
-}
-
-.signup-title {
-    display: flex;
-    box-sizing: border-box;
-    justify-content: center;
 }
 
 .signup-input {
@@ -84,44 +76,37 @@ content-visibility: hidden;
 
 .email-input, .username-input, .password-input, .c-password-input {
     height: 25px;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-    width: auto;
+    border: 1px solid #161414;
+    border-radius: 2.5px;
     justify-content: center;
     align-self: center;
+    padding: 3px;
+    padding-right: 100px;
 }
 
 .email-input:focus {
-    border: 3px solid rgb(14, 114, 176);
+    border: 1px solid rgb(14, 114, 176);
 }
 
 .username-input:focus {
-    border: 3px solid rgb(14, 114, 176);
+    border: 1px solid rgb(14, 114, 176);
 }
 
 .password-input:focus {
-    border: 3px solid rgb(14, 114, 176);
+    border: 1px solid rgb(14, 114, 176);
 }
 
 .c-password-input:focus {
-    border: 3px solid rgb(14, 114, 176);
+    border: 1px solid rgb(14, 114, 176);
 }
 
 .signupBtn {
-    display: flex;
-    box-sizing: border-box;
-    align-content: center;
-    justify-content: center;
-    margin-left: 70px;
-    margin-top: 10px;
+    align-self: center;
     cursor: pointer;
     font-size: 15px;
     background: rgb(14, 114, 176);
-    border: 1px solid rgb(14, 114, 176);
     color: #fff;
-    /* padding: 10px 20px; */
     border-radius: 5px;
-    width: 100px;
 }
 
 .signupBtn:hover {
