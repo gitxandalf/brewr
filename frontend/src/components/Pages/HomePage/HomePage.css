@@ -59,8 +59,8 @@ transition: color .5s;
 
 .footer {
     display: flex;
+    justify-content: space-around;
     font-family: sans-serif;
-    justify-content: center;
     margin-top: 10px;
     position:fixed;
     height: 55px;
@@ -71,6 +71,7 @@ transition: color .5s;
 }
 
 .footer a {
+    color: rgb(211, 211, 211, 0.25);
     text-decoration: none;
 }
 
@@ -81,7 +82,7 @@ transition: color .5s;
    border-radius: 5px;
 }
 
-.github-link a:hover {
+.footer a:hover {
     color: white;
 }
 

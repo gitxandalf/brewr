@@ -10,10 +10,10 @@
     align-items: center;
     align-content: center;
     font-family: sans-serif;
-    background-color: rgb(22, 20, 20);
+    background-color: white;
     padding: 2rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 25px;
+    border-radius: 5px;
 }
 
 form {
@@ -56,39 +56,29 @@ form {
 
 .login-title {
     display: flex;
-    box-sizing: border-box;
-    /* margin-left: 30px; */
     margin-bottom: 20px;
     margin-top: 0px;
     justify-content: center;
-    align-self: center;
+    font-weight: 300;
 }
 
 
-.usernameInput {
+.usernameInput, .passwordInput {
     height: 25px;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-    width: auto;
+    border: 1px solid #161414;
+    border-radius: 2.5px;
     justify-content: center;
     align-self: center;
+    padding: 3px;
+    padding-right: 100px;
 }
 
 .usernameInput:focus {
-    border: 3px solid rgb(14, 114, 176);
-}
-
-.passwordInput {
-    height: 25px;
-    border: 1px solid #ffffff;
-    width: auto;
-    border-radius: 5px;
-    justify-content: center;
-    align-self: center;
+    border: 1px solid rgb(14, 114, 176);
 }
 
 .passwordInput:focus {
-    border: 3px solid rgb(14, 114, 176);
+    border: 1px solid rgb(14, 114, 176);
 }
 
 .loginBtn {
