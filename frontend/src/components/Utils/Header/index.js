@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import './Header.css'
+import logo from "../../../images/logo.png"
 
 function Header() {
     return (
         <h1 className="header">
-            <img className='header-icon' alt="" src="https://res.cloudinary.com/xanderg/image/upload/v1641754293/931949_snanlf.png" />
+            <img className='header-icon' alt="" src={logo} />
             brewr
         </h1>
     )

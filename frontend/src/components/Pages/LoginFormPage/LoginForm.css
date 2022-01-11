@@ -103,6 +103,7 @@ button[type="submit"]:hover {
 }
 
 .signup-link {
+    text-align: center;
     align-content: center;
     justify-content: center;
     margin-top: 25px;

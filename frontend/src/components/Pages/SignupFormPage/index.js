@@ -4,6 +4,7 @@ import { Redirect } from "react-router-dom";
 import * as sessionActions from "../../../store/session";
 import Header from "../../Utils/Header"
 import './SignupForm.css';
+import logo from "../../../images/logo.png"
 
 function SignupFormPage() {
     const dispatch = useDispatch();
@@ -36,7 +37,7 @@ function SignupFormPage() {
 
             <div className="signup-form">
 
-                <img className='signup-icon' alt="" src="https://res.cloudinary.com/xanderg/image/upload/v1641754293/931949_snanlf.png" />
+                <img className='signup-icon' alt="" src={logo} />
 
                 <form className="signup-form2" onSubmit={handleSubmit}>
 
