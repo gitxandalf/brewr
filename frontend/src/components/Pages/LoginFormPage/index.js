@@ -4,7 +4,6 @@ import { Redirect } from 'react-router-dom';
 import './LoginForm.css';
 import * as sessionActions from '../../../store/session';
 import Header from '../../Utils/Header';
-import loginBeer from "../../../images/login-beer.jpg"
 import logo from "../../../images/logo.png"
 
 function LoginFormPage() {

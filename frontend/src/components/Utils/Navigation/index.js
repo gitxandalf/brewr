@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
+import * as sessionActions from "../../../store/session"
 import ProfileButton from './ProfileButton';
-import SearchBar from './SearchBar';
 import './Navigation.css';
 import logo from "../../../images/logo.png"
 
 function Navigation({ isLoaded }) {
+
     const sessionUser = useSelector(state => state.session.user);
 
     let sessionLinks;
+
+    const dispatch = useDispatch();
+
+    useEffect(() => {
+        dispatch(sessionActions.restoreUser())
+    }, [dispatch])
+
     if (sessionUser) {
         sessionLinks = (
             <ProfileButton id="profileBtn" user={sessionUser} />

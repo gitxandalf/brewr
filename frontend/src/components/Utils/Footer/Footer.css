@@ -1,0 +1,30 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    bottom: 0;
+    left:0;
+    font-family: sans-serif;
+    margin-top: 10px;
+    position:fixed;
+    height: 55px;
+    width: 100vw;
+    background-color: black;
+    align-items: center;
+    color: darkgray;
+}
+
+.footer a {
+    color: rgb(211, 211, 211, 0.25);
+    text-decoration: none;
+}
+
+.github-link a {
+    color: inherit;
+   background-color: rgb(211, 211, 211, 0.25);
+   padding: 3px;
+   border-radius: 5px;
+}
+
+.footer a:hover {
+    color: white;
+}
