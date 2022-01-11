@@ -16,7 +16,7 @@ function HomePage() {
     }, [dispatch])
 
     return (
-        <div>
+        <div className="home-page-body">
 
             <div>
                 <Navigation isLoaded={isLoaded} />

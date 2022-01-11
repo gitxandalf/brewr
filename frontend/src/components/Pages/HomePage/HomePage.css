@@ -1,6 +1,11 @@
-body {
+.home-page-body {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     padding: 0px;
     z-index: 0;
+    position: absolute;
     animation: slideshow infinite linear 30s;
 }
 
