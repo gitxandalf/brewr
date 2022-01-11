@@ -123,7 +123,7 @@ a:link {
     position: fixed;
     height: 100%;
     width: 100%;
-    background-image: url(https://images.alphacoders.com/823/823062.jpg);
+    background-image: url("../../../images/login-beer.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
 }

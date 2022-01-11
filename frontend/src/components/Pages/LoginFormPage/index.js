@@ -4,6 +4,8 @@ import { Redirect } from 'react-router-dom';
 import './LoginForm.css';
 import * as sessionActions from '../../../store/session';
 import Header from '../../Utils/Header';
+import loginBeer from "../../../images/login-beer.jpg"
+import logo from "../../../images/logo.png"
 
 function LoginFormPage() {
     const dispatch = useDispatch();
@@ -29,11 +31,11 @@ function LoginFormPage() {
     return (
         <div className='bg'>
 
-           <Header />
+            <Header />
 
             <div className='form'>
 
-                <img className='icon' alt="" src="https://res.cloudinary.com/xanderg/image/upload/v1641754293/931949_snanlf.png" />
+                <img className='icon' alt="" src={logo} />
 
                 <form onSubmit={handleSubmit}>
 
