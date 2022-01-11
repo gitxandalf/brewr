@@ -3,6 +3,7 @@ import { useDispatch } from "react-redux";
 import { NavLink } from 'react-router-dom';
 import * as sessionActions from "../../../store/session";
 import Navigation from "../../Utils/Navigation";
+import Footer from "../../Utils/Footer";
 import "./HomePage.css";
 
 
@@ -30,15 +31,10 @@ function HomePage() {
                     <p className="center-text-2">photos and 2 million groups.</p>
                 </div>
                 <div>
-                <NavLink id="start-for-free" to="/signup">Start for free</NavLink>
+                    <NavLink id="start-for-free" to="/signup">Start for free</NavLink>
                 </div>
             </div>
-
-            <footer className="footer">
-            {/* <p className='github-link'><a href="https://github.com/gitxandalf">GitHub</a> and <a className="linkedin-link" href="https://www.linkedin.com/in/alexander-gangemi/">LinkedIn</a> for Alexander Gangemi</p> */}
-            <a href="https://github.com/gitxandalf">GitHub</a>
-            <a className="linkedin-link" href="https://www.linkedin.com/in/alexander-gangemi/">LinkedIn</a>
-            </footer>
+            <Footer />
         </div>
     )
 }

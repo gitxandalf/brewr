@@ -2,7 +2,6 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import ProfileButton from './ProfileButton';
-import SearchBar from './SearchBar';
 import './Navigation.css';
 import logo from "../../../images/logo.png"
 
