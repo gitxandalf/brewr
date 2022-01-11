@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 import ProfileButton from './ProfileButton';
 import SearchBar from './SearchBar';
 import './Navigation.css';
+import logo from "../../../images/logo.png"
 
 function Navigation({ isLoaded }) {
     const sessionUser = useSelector(state => state.session.user);
@@ -29,7 +30,7 @@ function Navigation({ isLoaded }) {
 
                 <div className='nav-ul'>
                     <div className='left-nav'>
-                        <img className='home-nav-icon' alt="" src="https://res.cloudinary.com/xanderg/image/upload/v1641754293/931949_snanlf.png" />
+                        <img className='home-nav-icon' alt="" src={logo} />
                         <div className='nav-home'>
                             <NavLink exact to="/">brewr</NavLink>
                         </div>
