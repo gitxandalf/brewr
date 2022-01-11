@@ -81,24 +81,41 @@ form {
     border: 1px solid rgb(14, 114, 176);
 }
 
+.loginBtns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8px;
+}
+
 .loginBtn {
     display: flex;
     justify-content: center;
 }
 
-button[type="submit"] {
+.demoBtn {
+    display: flex;
+    justify-content: center;
+}
+
+button[type="submit"], button[type="button"] {
     margin-top: 10px;
     cursor: pointer;
     font-size: 15px;
     background: rgb(14, 114, 176);
     border: 1px solid rgb(14, 114, 176);
     color: #fff;
-    padding: 10px 20px;
     border-radius: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     width: 100px;
 }
 
 button[type="submit"]:hover {
+    background: rgb(28, 121, 179);
+}
+
+button[type="button"]:hover {
     background: rgb(28, 121, 179);
 }
 

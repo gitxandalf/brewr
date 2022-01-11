@@ -28,6 +28,16 @@ function LoginFormPage() {
             });
     }
 
+    const demoHandle = (e) => {
+        e.preventDefault();
+        setErrors([]);
+        return dispatch(sessionActions.login({ credential: 'Demo-Daisy', password: 'password' }))
+            .catch(async (res) => {
+                const data = await res.json();
+                if (data && data.errors) setErrors(data.errors);
+            });
+    }
+
     return (
         <div className='bg'>
 
@@ -68,8 +78,14 @@ function LoginFormPage() {
                             {errors.map((error, idx) => <li key={idx}>{error}</li>)}
                         </ul>
 
-                        <div className='loginBtn'>
-                            <button type="submit">Log in</button>
+                        <div className='loginBtns'>
+                            <div className='loginBtn'>
+                                <button type="submit">Log in</button>
+                            </div>
+
+                            <div className='demoBtn'>
+                                <button type='button' onClick={demoHandle}>Demo User</button>
+                            </div>
                         </div>
 
                         <p className='signup-link'>Not a Brewr member? <a href="signup">Sign up here.</a></p>
