@@ -6,7 +6,7 @@
     justify-content: space-between;
     align-items: center;
     font-family: sans-serif;
-    position: absolute;
+    position: fixed;
     background-color:rgba(0, 0, 0, 0.507);
     top: 0px;
     left: 0px;

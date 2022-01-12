@@ -1,0 +1,23 @@
+.user-nav {
+    display: flex;
+    justify-content: space-around;
+    font-family: sans-serif;
+    margin-top: 65px;
+    position:fixed;
+    height: 55px;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.514);
+    align-items: center;
+}
+
+.user-nav a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background-color: rgb(28, 121, 179);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.user-nav a:hover {
+    text-decoration-line: underline;
+}

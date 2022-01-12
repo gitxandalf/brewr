@@ -40,7 +40,7 @@ function Navigation({ isLoaded }) {
                     <div className='left-nav'>
                         <img className='home-nav-icon' alt="" src={logo} />
                         <div className='nav-home'>
-                            <NavLink exact to="/">brewr</NavLink>
+                        <NavLink exact to="/">brewr</NavLink>
                         </div>
                     </div>
 

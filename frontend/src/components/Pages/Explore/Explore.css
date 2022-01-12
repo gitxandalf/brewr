@@ -1,0 +1,8 @@
+.explore-bg {
+    z-index: 0;
+    background-image: url("../../../images/explore-beer.jpg");
+    height: 100vw;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

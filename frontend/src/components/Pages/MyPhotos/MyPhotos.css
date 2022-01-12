@@ -1,0 +1,8 @@
+.my-photos-bg {
+    z-index: 0;
+    background-image: url("../../../images/my-photos-beer.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
