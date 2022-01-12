@@ -6,8 +6,9 @@ function UserNav() {
     return (
         <div>
         <div className='user-nav'>
-            <a href="explore">Explore</a>
-            <a href="my-photos">My Photos</a>
+            <NavLink to="/explore">Explore</NavLink>
+            <NavLink to="/my-photos">My Photos</NavLink>
+
         </div>
         </div>
     )

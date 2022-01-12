@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Redirect } from "react-router-dom";
+import { NavLink, Redirect } from "react-router-dom";
 import * as sessionActions from "../../../store/session";
 import Header from "../../Utils/Header"
 import './SignupForm.css';
@@ -92,7 +92,7 @@ function SignupFormPage() {
 
                         </div>
 
-                        <p className='login-link'>Already a Brewr member? <a href="login">Log in here.</a></p>
+                        <p className='login-link'>Already a Brewr member? <NavLink to="/login">Log in here</NavLink></p>
 
                     </div>
                 </form>

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Redirect, useHistory } from 'react-router-dom';
+import { NavLink, Redirect, useHistory } from 'react-router-dom';
 import './LoginForm.css';
 import * as sessionActions from '../../../store/session';
 import Header from '../../Utils/Header';
@@ -87,7 +87,7 @@ function LoginFormPage() {
                             </div>
                         </div>
 
-                        <p className='signup-link'>Not a Brewr member? <a href="signup">Sign up here.</a></p>
+                        <p className='signup-link'>Not a Brewr member? <NavLink to="/signup">Sign up here</NavLink></p>
 
                     </div>
                 </form>
