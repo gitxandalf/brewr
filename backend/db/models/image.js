@@ -18,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
         len: [10, 200]
       },
     },
-    description: {
+    content: {
       allowNull: false,
       type: DataTypes.TEXT,
       default: ''
