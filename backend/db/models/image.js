@@ -18,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
         len: [10, 200]
       },
     },
-    description: {
+    content: {
       allowNull: false,
       type: DataTypes.TEXT,
       default: ''
@@ -29,7 +29,7 @@ module.exports = (sequelize, DataTypes) => {
     // associations can be defined here
     Image.belongsTo(models.User, { foreignKey: 'userId' })
     Image.belongsTo(models.Album, { foreignKey: 'albumId' })
-    Image.hasMany(models.Comment, {foreignKey: 'imageId'})
+    Image.hasMany(models.Comment, { foreignKey: 'imageId', onDelete: 'CASCADE', hooks: true })
   };
   return Image;
 };

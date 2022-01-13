@@ -1,8 +1,57 @@
 .explore-bg {
-    z-index: 0;
+    z-index: -1;
     background-image: url("../../../images/explore-beer.jpg");
     height: 100vw;
     width: 100vw;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-repeat:no-repeat;
+    position: fixed;
+
+}
+
+.explore-images-bg {
+    z-index: -1;
+    position: fixed;
+    margin-left: 12vw;
+    margin-top: 119px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position:center;
+    width: 75vw;
+    height: 80vw;
+    scroll-behavior: smooth;
+}
+
+.explore-header {
+    color: white;
+    font-family: sans-serif;
+    position: fixed;
+    margin-left: -900px;
+    margin-top: 5vw;
+}
+
+.image-container {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   font-family: sans-serif;
+   padding-top: 150px;
+   margin: auto;
+   margin-bottom: 5vw;
+}
+
+.image-container a {
+    text-decoration: none;
+    color: white;
+}
+
+.image-container a:hover {
+    color: rgb(28, 121, 179);
+}
+
+.style {
+    align-items: center;
+}
+
+.image-spread {
+   max-width: 400px;
 }

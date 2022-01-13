@@ -1,8 +1,60 @@
 .my-photos-bg {
-    z-index: 0;
+    z-index: -1;
     background-image: url("../../../images/my-photos-beer.jpg");
-    height: 100vh;
+    height: 100vw;
     width: 100vw;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+   position: fixed;
+}
+
+.my-photos-container {
+    z-index: -1;
+    position: fixed;
+    margin-left: 12vw;
+    margin-top: 119px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position:center;
+    width: 75vw;
+    height: 80vw;
+    scroll-behavior: smooth;
+}
+
+.my-photos-header {
+    z-index: 150;
+    color: white;
+    font-family: sans-serif;
+    position: fixed;
+    margin-left: 19vw;
+    margin-top: 10vw;
+}
+
+.add {
+    z-index: 150;
+    color: white;
+    font-family: sans-serif;
+    position: fixed;
+    background-color:rgb(28, 121, 179) ;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 22.5vw;
+    margin-top: 12vw;
+}
+
+.add:hover {
+    text-decoration-line: underline;
+}
+
+.my-photos-images {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   font-family: sans-serif;
+   padding-top: 150px;
+   margin: auto;
+   margin-bottom: 5vw;
+}
+
+.my-photos-spread {
+   max-width: 400px;
 }
