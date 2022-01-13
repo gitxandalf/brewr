@@ -20,7 +20,6 @@ function EditImageForm({ images }) {
     const [errors, setErrors] = useState([]);
 
     useEffect(() => {
-        dispatch(updateImage());
         dispatch(sessionActions.restoreUser());
     }, [dispatch])
 
