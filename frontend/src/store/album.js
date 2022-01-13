@@ -9,9 +9,9 @@ const load = list => ({
 })
 
 export const getAlbums = (payload) => async dispatch => {
-    console.log("HELLO FROM GET ALBUMS THUNK")
+
     const response = await csrfFetch(`/api/albums`);
-    console.log("GET ALBUMS THUNK RESPONSE", response)
+    
     if (response.ok) {
         const list = await response.json();
         dispatch(load(list))

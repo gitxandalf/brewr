@@ -14,7 +14,7 @@ function AddImageForm({images}) {
     const sessionUser = useSelector(state => state.session.user)
     const albums = useSelector(state => state.album.entries)
     const choiceAlbum = albums.filter(album => album.userId === sessionUser.id)
-    console.log("CHOICE ALBUM", choiceAlbum)
+ 
 
     const [userId, setUserId] = useState(sessionUser?.id)
     const [albumId, setAlbumId] = useState('')

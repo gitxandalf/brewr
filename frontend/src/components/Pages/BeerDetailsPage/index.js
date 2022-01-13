@@ -15,7 +15,7 @@ const BeerDetails = ({ images }) => {
     const { id } = useParams()
 
     const singleImage = images.find(image => image.id === +id)
-    console.log("single image", singleImage)
+   
     const sessionUser = useSelector(state => state.session.user)
 
     useEffect(() => {
