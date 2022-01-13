@@ -112,11 +112,11 @@ button[type="submit"], button[type="button"] {
 }
 
 button[type="submit"]:hover {
-    background: rgb(28, 121, 179);
+    background: rgb(45, 138, 196);
 }
 
 button[type="button"]:hover {
-    background: rgb(28, 121, 179);
+    background: rgb(45, 138, 196);
 }
 
 .signup-link {

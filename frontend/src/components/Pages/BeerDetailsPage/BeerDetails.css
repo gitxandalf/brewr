@@ -1,0 +1,18 @@
+.beer-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.beer-image {
+    margin-top: 8vw;
+    max-width: 1000px;
+}
+
+.image-data-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    margin-bottom: 5vw;
+}

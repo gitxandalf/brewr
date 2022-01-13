@@ -24,7 +24,7 @@
     color: white;
     font-family: sans-serif;
     position: fixed;
-    margin-left: 19vw;
+    margin-left: 17vw;
     margin-top: 10vw;
 }
 
@@ -36,12 +36,28 @@
     background-color:rgb(28, 121, 179) ;
     padding: 5px;
     border-radius: 5px;
-    margin-left: 22.5vw;
-    margin-top: 12vw;
+    margin-left: 21vw;
+    margin-top: 14vw;
 }
 
 .add:hover {
-    text-decoration-line: underline;
+    background: rgb(45, 138, 196);
+}
+
+.delete {
+   width: auto;
+   height: auto;
+   margin-left: 10px;
+}
+
+.edit {
+    margin-top: 12px;
+    color: white;
+    font-family: sans-serif;
+    /* position: fixed; */
+    background-color:rgb(28, 121, 179) ;
+    padding: 6px;
+    border-radius: 5px;
 }
 
 .my-photos-images {
@@ -50,9 +66,10 @@
     flex-direction: column;
    align-items: center;
    font-family: sans-serif;
-   padding-top: 150px;
+   padding-top: 50px;
    margin: auto;
-   margin-bottom: 5vw;
+   /* margin-bottom: 5vw; */
+   /* gap: 50px; */
 }
 
 .my-photos-spread {

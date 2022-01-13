@@ -11,7 +11,7 @@ const checkPost = [
         .exists({ checkFalsy: true })
         .isLength({ min: 2 })
         .withMessage('Tell the world about your beer.'),
-    check('url')
+    check('imageUrl')
         .exists({ checkFalsy: true })
         .isURL()
         .withMessage('Please provide a valid URL.'),
@@ -50,7 +50,6 @@ router.put('/:id(\\d+)', asyncHandler(async function (req, res, next) {
 }))
 
 router.delete('/:id(\\d+)', asyncHandler(async function (req, res) {
-    console.log("THIS OTHER FUCKIN THING", req.params.id)
     const image = await Image.findByPk(req.params.id);
     if (image) {
         await image.destroy();

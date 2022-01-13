@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { useSelector, useDispatch } from 'react-redux';
 import { Link, NavLink, useHistory } from 'react-router-dom'
 import { getImages, removeImage } from "../../../store/image";
@@ -9,8 +9,6 @@ import './MyPhotos.css'
 
 function MyPhotos() {
 
-
-    const [image, setImage] = useState();
     const history = useHistory();
     const dispatch = useDispatch();
     const sessionUser = useSelector(state => state.session.user)
@@ -42,13 +40,12 @@ function MyPhotos() {
                     <div key={id} className="my-photos-images">
                         <figure >
                             <Link to={`/images/${image.id}`}>
-                                <img key={id} className="my-photos-spread" src={sessionUser.id === image.userId ? image.imageUrl : null} />
+                                <img key={id} alt="" className="my-photos-spread" src={sessionUser.id === image.userId ? image.imageUrl : null} />
                             </Link>
                             <br />
-                            <NavLink hidden={sessionUser.id === image.userId ? false : true} to="/edit-a-brew" className="edit">Edit</NavLink>
-
+                            <NavLink hidden={sessionUser.id === image.userId ? false : true} to={`/images/${image.id}/edit`} value={image.id} className="edit">Edit</NavLink>
+                            <button hidden={sessionUser.id === image.userId ? false : true} className="delete" value={image.id} onClick={handleDelete} type="submit">Delete</button>
                         </figure>
-                        <button hidden={sessionUser.id === image.userId ? false : true} className="delete" value={image.id} onClick={handleDelete} type="submit">Delete</button>
                     </div>
                 )
             })}

@@ -1,0 +1,52 @@
+.add-image-bg {
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(35, 35, 37);
+    height: 100vw;
+    width: 100vw;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.add-image-icon {
+    height: 35px;
+    width: 35px;
+}
+
+.add-image-inputs {
+    font-family: sans-serif;
+    margin-top: 10vw;
+    margin-left: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    gap: 8px;
+    background-color: white;
+}
+
+.url-input, .content-input {
+    padding-right: 100px;
+    text-overflow:ellipsis;
+    overflow-inline:inherit ;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.content-input {
+    padding-bottom: 25px;
+    overflow: scroll;
+}
+
+.add-cancel {
+    color: black;
+}
+
+.add-cancel:hover {
+    color: rgb(28, 121, 179);
+}

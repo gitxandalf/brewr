@@ -20,5 +20,5 @@
 }
 
 .user-nav a:hover {
-    text-decoration-line: underline;
+    background: rgb(45, 138, 196);
 }

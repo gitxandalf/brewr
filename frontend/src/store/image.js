@@ -48,9 +48,6 @@ export const getImage = (payload) => async dispatch => {
 export const postImage = (payload) => async dispatch => {
     const response = await csrfFetch(`/api/images`, {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
         body: JSON.stringify(payload)
     })
 
@@ -71,7 +68,7 @@ export const updateImage = (payload) => async dispatch => {
     })
     if (response.ok) {
         const edit = await response.json()
-        dispatch(addImage(edit))
+        dispatch(editImage(edit))
         return edit
     }
 }
@@ -83,7 +80,6 @@ export const removeImage = (id) => async dispatch => {
 
     if (response.ok) {
         const image = await response.json();
-        console.log("THIS FUCKIN THING", image)
         dispatch(deleteImage(image))
     }
 }
@@ -108,7 +104,7 @@ const imageReducer = (state = initialState, action) => {
         case ADD_IMAGE: {
             return {
                 ...state,
-                entries: [...state.entries, ...action.image]
+                entries: [...state.entries, action.image]
             }
         }
 

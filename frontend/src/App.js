@@ -10,12 +10,19 @@ import Navigation from "./components/Utils/Navigation";
 import Footer from "./components/Utils/Footer";
 import UserNav from "./components/Utils/UserNav";
 import MyPhotos from "./components/Pages/MyPhotos";
+import AddImageForm from "./components/Pages/AddImageForm";
+import EditImageForm from "./components/Pages/EditImageForm";
+import BeerDetails from "./components/Pages/BeerDetailsPage";
+import { getImages } from "../src/store/image"
 
 function App() {
   const dispatch = useDispatch();
+  const images = useSelector((state) => state.image.entries)
   const sessionUser = useSelector((state) => state.session.user);
   const [isLoaded, setIsLoaded] = useState();
+
   useEffect(() => {
+    dispatch(getImages());
     dispatch(sessionActions.restoreUser()).then(() => setIsLoaded(true));
   }, [dispatch])
 
@@ -38,7 +45,7 @@ function App() {
     </Switch>
   )
 
-  return {isLoaded} && (
+  return { isLoaded } && (
     <>
       <Navigation isLoaded={true} />
 
@@ -60,6 +67,18 @@ function App() {
 
         <Route path="/explore">
           <Explore />
+        </Route>
+
+        <Route path="/add-a-brew">
+          <AddImageForm />
+        </Route>
+
+        <Route path="/images/:id/edit">
+          <EditImageForm images={images} />
+        </Route>
+
+        <Route path="/images/:id">
+          <BeerDetails images={images} />
         </Route>
 
         <Route>
