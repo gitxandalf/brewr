@@ -76,12 +76,14 @@ export const updateImage = (payload) => async dispatch => {
     }
 }
 
-export const removeImage = (payload) => async dispatch => {
-
-    const response = await csrfFetch(`/api/images/${payload.id}`);
+export const removeImage = (id) => async dispatch => {
+    const response = await csrfFetch(`/api/images/${id}`, {
+        method: 'delete'
+    });
 
     if (response.ok) {
         const image = await response.json();
+        console.log("THIS FUCKIN THING", image)
         dispatch(deleteImage(image))
     }
 }

@@ -50,6 +50,7 @@ router.put('/:id(\\d+)', asyncHandler(async function (req, res, next) {
 }))
 
 router.delete('/:id(\\d+)', asyncHandler(async function (req, res) {
+    console.log("THIS OTHER FUCKIN THING", req.params.id)
     const image = await Image.findByPk(req.params.id);
     if (image) {
         await image.destroy();
