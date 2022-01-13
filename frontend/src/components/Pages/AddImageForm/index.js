@@ -14,7 +14,7 @@ function AddImageForm({images}) {
     const sessionUser = useSelector(state => state.session.user)
     const albums = useSelector(state => state.album.entries)
     const choiceAlbum = albums.filter(album => album.userId === sessionUser.id)
- 
+
 
     const [userId, setUserId] = useState(sessionUser?.id)
     const [albumId, setAlbumId] = useState('')
@@ -95,7 +95,7 @@ function AddImageForm({images}) {
                             <Link className='add-cancel' to='/my-photos'>Cancel</Link>
                         </div>
 
-                        <ul>
+                        <ul className="add-errors">
                             {errors.map((error, i) => <li key={i}>{error}</li>)}
                         </ul>
 

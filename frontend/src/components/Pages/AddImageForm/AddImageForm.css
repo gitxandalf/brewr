@@ -50,3 +50,11 @@
 .add-cancel:hover {
     color: rgb(28, 121, 179);
 }
+
+.add-errors {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    gap: 8px;
+    align-items: center;
+}

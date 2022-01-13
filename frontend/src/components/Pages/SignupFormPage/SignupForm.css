@@ -17,7 +17,7 @@
     display: flex;
     min-width: 400px;
     width: 400px;
-    height: 425px;
+    height: 500px;
     margin: 0px;
     margin-top: 12vw;
     margin-left: 40vw;
@@ -125,20 +125,13 @@ margin-bottom: 20px;
 
 .signup-errors {
     display: flex;
-    gap: 8px;
-    border-radius: 5px;
-    font-family: sans-serif;
     flex-direction: column;
-    justify-content: center;
+    gap: 8px;
+    font-family: sans-serif;
     align-content: center;
-    /* margin-left: 43vw; */
-    /* margin-top: 10vw; */
-    /* margin-bottom: 50px ; */
     color: red;
     width: 250px ;
     overflow: hidden;
-    /* background-color:rgb(22, 20, 20);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 *{ margin: 0; padding: 0; box-sizing: border-box;}

@@ -7,14 +7,14 @@ const { Image, User } = require("../../db/models")
 const router = express.Router();
 
 const checkPost = [
-    check('content')
-        .exists({ checkFalsy: true })
-        .isLength({ min: 2 })
-        .withMessage('Tell the world about your beer.'),
     check('imageUrl')
         .exists({ checkFalsy: true })
         .isURL()
         .withMessage('Please provide a valid URL.'),
+    check('content')
+        .exists({ checkFalsy: true })
+        .isLength({ min: 2 })
+        .withMessage('Tell the world about your beer by adding a valid description.'),
 ]
 
 router.get('/', asyncHandler(async function (_req, res) {
