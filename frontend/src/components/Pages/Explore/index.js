@@ -27,8 +27,8 @@ function Explore() {
                     <h2 className="explore-header">Everything we have on tap.</h2>
                     {allImages.map((image, id) => {
                         return (
-                            <div className="image-container">
-                                <figure key={id}>
+                            <div key={id} className="image-container">
+                                <figure>
                                     <Link to={`/images/${image.id}`}>
                                         <img key={id} className="image-spread" src={image.imageUrl} />
                                     </Link>
