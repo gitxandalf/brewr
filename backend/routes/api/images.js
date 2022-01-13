@@ -31,10 +31,10 @@ router.get('/:id(\\d+)', asyncHandler(async function (req, res) {
 }))
 
 router.post('/', checkPost, asyncHandler(async function (req, res) {
-    const { userId, albumId, imageUrl, content } = req.body;
+    const { userId, imageUrl, content } = req.body;
     const validationErrors = validationResult(req);
     if (validationErrors.isEmpty()) {
-        const image = await Image.create({ userId, albumId, imageUrl, content });
+        const image = await Image.create({ userId, imageUrl, content });
         return res.status(201).json(image)
 
     } else res.json(validationErrors)

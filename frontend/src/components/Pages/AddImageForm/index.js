@@ -7,7 +7,7 @@ import * as sessionActions from "../../../store/session"
 import logo from "../../../images/logo.png"
 import './AddImageForm.css'
 
-function AddImageForm() {
+function AddImageForm({images}) {
 
     const dispatch = useDispatch();
     const history = useHistory();
@@ -34,7 +34,6 @@ function AddImageForm() {
 
         let payload = {
             userId,
-            albumId,
             imageUrl,
             content,
         }
@@ -78,12 +77,12 @@ function AddImageForm() {
                         />
                         <br />
                         <select
+                            hidden={sessionUser.id > 3 ? true : false }
                             className='album-input'
                             placeholder='Which album will you add to?'
                             type="text"
                             value={albumId}
                             onChange={(e) => setAlbumId(e.target.value)}
-                            required
                         >
                             <option className="album-option" value=''>Select an album</option>
                             {choiceAlbum?.map(album => <option className='album-option' key={album.id} value={album.id}>{album.title}</option>)}

@@ -61,6 +61,10 @@ function App() {
           <Redirect to="/" />
         </Route>
 
+        <Route path="/signup">
+          <Redirect to="/" />
+        </Route>
+
         <Route path="/my-photos">
           <MyPhotos />
         </Route>
@@ -70,7 +74,7 @@ function App() {
         </Route>
 
         <Route path="/add-a-brew">
-          <AddImageForm />
+          <AddImageForm images={images} />
         </Route>
 
         <Route path="/images/:id/edit">

@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
       references: { model: "Users" }
     },
     albumId: {
-      allowNull: false,
+      allowNull: true,
       type: DataTypes.INTEGER,
       references: { model: "Albums" }
     },
