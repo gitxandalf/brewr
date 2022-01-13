@@ -4,7 +4,6 @@ import { Link, useHistory, useParams } from 'react-router-dom'
 import { updateImage } from "../../../store/image";
 import * as sessionActions from "../../../store/session"
 import logo from "../../../images/logo.png"
-import './EditImageForm.css'
 
 function EditImageForm({ images }) {
 
