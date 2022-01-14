@@ -6,7 +6,7 @@
 
 ## Technologies Used:
 
-Javascript | Node.js | NPM | Git| HTML / JSX | CSS | React | Redux | PostgreSQL | Sequelize | Heroku
+Javascript | Node.js | NPM | Git | HTML / JSX | CSS | React | Redux | PostgreSQL | Sequelize | Heroku
 
 ![This is an image](https://i.imgur.com/SCUpszp.png)
 
