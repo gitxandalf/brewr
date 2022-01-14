@@ -48,13 +48,13 @@
    width: auto;
    height: auto;
    margin-left: 10px;
+   margin-bottom: 60px;
 }
 
 .edit {
     margin-top: 12px;
     color: white;
     font-family: sans-serif;
-    /* position: fixed; */
     background-color:rgb(28, 121, 179) ;
     padding: 6px;
     border-radius: 5px;
@@ -63,15 +63,12 @@
 .my-photos-images {
     z-index: 1;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
    align-items: center;
    font-family: sans-serif;
-   padding-top: 50px;
-   margin: auto;
-   /* margin-bottom: 5vw; */
-   /* gap: 50px; */
-}
+   /* padding-bottom: 75px; */
 
+}
 .my-photos-spread {
    max-width: 400px;
 }

@@ -19,7 +19,7 @@ const checkPost = [
 
 router.get('/', asyncHandler(async function (_req, res) {
     const images = await Image.findAll({
-        order: [['updatedAt', 'DESC']],
+        order: [['userId', 'DESC']],
         include: [{ model: User }],
     });
     return res.json(images)

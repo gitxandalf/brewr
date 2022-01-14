@@ -37,7 +37,7 @@ function MyPhotos() {
             </div>
             {allImages.map((image, id) => {
                 return (
-                    <div key={id} className="my-photos-images">
+                    <div key={image.userId} value={id} className="my-photos-images">
                         <figure >
                             <Link to={`/images/${image.id}`}>
                                 <img key={id} alt="" className="my-photos-spread" src={sessionUser.id === image.userId ? image.imageUrl : null} />

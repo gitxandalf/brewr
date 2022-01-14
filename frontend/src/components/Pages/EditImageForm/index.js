@@ -9,10 +9,11 @@ function EditImageForm({ images }) {
 
     const dispatch = useDispatch();
     const history = useHistory();
-    const sessionUser = useSelector(state => state.session.user)
     const { id } = useParams();
+    
     const currentImg = images.find(image => image.id === +id)
 
+    const sessionUser = useSelector(state => state.session.user)
 
     const [albumId, setAlbumId] = useState(currentImg?.albumId)
     const [content, setContent] = useState(currentImg?.content)
